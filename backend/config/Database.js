@@ -1,7 +1,7 @@
-import {Sequelize} from "sequelize";
+import { Sequelize } from "sequelize";
 
-const db = new Sequelize('pengaduan_frontend','root','',{
-    host: 'localhost',
+const db = new Sequelize('pengaduan_frontend', 'root', '', {
+    host: "localhost",
     dialect: "mysql"
 });
 
