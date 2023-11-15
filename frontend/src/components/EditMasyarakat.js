@@ -3,11 +3,11 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 
 const EditMasyarakat = () => {
-  const [nik, setNik] = useState("");
   const [nama, setNama] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [telp, setTelp] = useState("");
+  const { nik } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,7 +25,6 @@ const EditMasyarakat = () => {
   const updateMasyarakat = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("nik", nik);
     formData.append("nama", nama);
     formData.append("username", username);
     formData.append("password", password);

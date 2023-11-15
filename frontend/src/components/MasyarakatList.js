@@ -25,8 +25,8 @@ const MasyarakatList = () => {
 
   return (
     <div className="container mt-5">
-      <Link to="/add" className="button is-success">
-        Add New
+      <Link to="/addMasyarakat" className="button is-success">
+        Add Masyarakat
       </Link>
       <div className="columns is-multiline mt-2">
         {masyarakats.map((masyarakat) => (
@@ -44,7 +44,7 @@ const MasyarakatList = () => {
               </div>
 
               <footer className="card-footer">
-                <Link to={`edit/${masyarakat.nik}`} className="card-footer-item">
+                <Link to={`/edit/${masyarakat.nik}`} className="card-footer-item">
                   Edit
                 </Link>
                 <a
